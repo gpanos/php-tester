@@ -24,11 +24,15 @@
                 <h3>Result:</h3>
                 <div class="result">
                     <?php 
-                        $result = $_POST['code'];
+                        $result = '';
+                        if (isset($_POST['code'])) {
+                            $result = $_POST['code'];
+                            
+                            $result = trim ( $result );
+                            $result = ltrim( $result, '<?php' );    
+                            $result = rtrim( $result, '?>' );
+                        }
                         
-                        $result = trim ( $result );
-                        $result = ltrim( $result, '<?php' );    
-                        $result = rtrim( $result, '?>' );
                     ?>
                     <p style="color:green;"><?php eval($result); ?></p>
                     
