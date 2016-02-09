@@ -1,0 +1,27 @@
+header {
+    text-align: center;
+}
+h1 {
+    margin: 100px;
+}
+textarea {
+    font-size: 15px;
+    color: blue; 
+}
+input {
+    margin: 20px;
+    height: 50px;
+    width:100px;
+}
+.wrapper {
+    width: 900px;
+    width: 50%;
+    margin: 0 auto;
+}
+.container {
+    text-align: center;
+}
+.result {
+    margin: 100px;
+    text-align: center;
+}
